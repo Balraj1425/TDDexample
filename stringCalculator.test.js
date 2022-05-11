@@ -19,6 +19,12 @@ test(
 )
 
 test(
+    "delimiter changed", ()=>{
+        expect(add("//;\n1;2")).toBe(3)
+    }
+)
+
+test(
     "negative addition", ()=>{
         expect(add("-1,-3")).toBe("negative not allowed")
     }
