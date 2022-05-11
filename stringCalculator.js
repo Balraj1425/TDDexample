@@ -7,6 +7,9 @@ add = (x) => {
 
     sum = 0;
     for(i of numArr){
+        if(i < 0){
+            return "negative not allowed";
+        }
         console.log(i)
         sum += i;
     }

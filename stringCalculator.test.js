@@ -13,7 +13,13 @@ test(
 )
 
 test(
+    "empty string should return 0", ()=>{
+        expect(add("1\n2,3")).toBe(6)
+    }
+)
+
+test(
     "negative addition", ()=>{
-        expect(add(-1,-3)).toBe("negative not allowed")
+        expect(add("-1,-3")).toBe("negative not allowed")
     }
 )
