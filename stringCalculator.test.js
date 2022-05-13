@@ -26,6 +26,6 @@ test(
 
 test(
     "negative addition", ()=>{
-        expect(add("-1,-3")).toBe("negative not allowed")
+        expect(add("-1,-3-4-5")).toBe("negative not allowed, -1, -3, -4, -5")
     }
 )
